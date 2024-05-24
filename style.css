@@ -1,0 +1,383 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.color1 { #a9ffc7 };
+.color2 { #96ebb5 };
+.color3 { #83d8a2 };
+.color4 { #70c490 };
+.color5 { #5db07d };
+
+.color1 { #cafcd9 };
+.color2 { #a3d4b2 };
+.color3 { #7bab8b };
+.color4 { #548364 };
+.color5 { #2d5a3d };
+
+.color1 { #377c2a };
+.color2 { #519742 };
+.color3 { #6bb25b };
+.color4 { #86cc73 };
+.color5 { #a0e78c };
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo h1 {
+    float: left;
+    margin: 0;
+    font-size: 24px;
+    padding: 10px;
+}
+
+header nav {
+    float: left;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .header-extras {
+    float: right;
+    margin-right: 20px;
+}
+
+header .header-extras a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+header .quote-button {
+    background: #00b300;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero .booking-form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero .booking-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.hero .booking-form form input,
+.hero .booking-form form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.hero .booking-form form button {
+    background: #00b300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.about a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00b300;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.rooms {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.rooms h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.rooms .room-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rooms .room {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.rooms .room img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.rooms .room h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.rooms .room p {
+    font-size: 16px;
+}
+
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.services .service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .service {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.services .service img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.services .service h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.services .service p {
+    font-size: 16px;
+}
+
+.app {
+    background: #00b300;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.app h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.app ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.app ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.app a img {
+    width: 150px;
+    margin: 10px;
+}
+
+.how-it-works {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.how-it-works h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.how-it-works .steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.how-it-works .step {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.how-it-works .step h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.how-it-works .step p {
+    font-size: 16px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+footer .footer-about,
+footer .footer-navigation,
+footer .footer-posts,
+footer .footer-newsletter {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+footer .footer-navigation ul,
+footer .footer-posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-navigation ul li,
+footer .footer-posts ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-navigation ul li a,
+footer .footer-newsletter form button {
+    color: #00b300;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-newsletter form input,
+footer .footer-newsletter form button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .footer-newsletter form button {
+    background: #00b300;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+    font-size: 16px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+footer .social-media a img {
+    width: 30px;
+}
