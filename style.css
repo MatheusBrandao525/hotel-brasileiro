@@ -36,59 +36,58 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
 }
 
 header .logo h1 {
-    float: left;
     margin: 0;
-    font-size: 24px;
-    padding: 10px;
-}
-
-header nav {
-    float: left;
-    margin-left: 20px;
 }
 
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 header nav ul li {
-    display: inline;
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-header .header-extras {
-    float: right;
-    margin-right: 20px;
-}
-
-header .header-extras a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 10px;
-    font-size: 16px;
-}
-
-header .quote-button {
-    background: #00b300;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: bold;
+}
+
+.header-extras {
+    display: flex;
+    align-items: center;
+}
+
+.header-extras a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+}
+
+.header-extras .quote-button {
+    background-color: #00b300;
+    border-radius: 5px;
+    padding: 10px 15px;
 }
 
 .hero {
@@ -380,4 +379,98 @@ footer .social-media {
 
 footer .social-media a img {
     width: 30px;
+}
+
+
+
+/* Slider CSS */
+/* Slider Styles */
+.slider {
+    width: 100%;
+    height: 620px;
+    position: relative;
+    object-fit: contain;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #00b300;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #00b300;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+/* Automatic navigation */
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #00b300;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navigation-auto div:hover {
+    background: #00b300;
 }
